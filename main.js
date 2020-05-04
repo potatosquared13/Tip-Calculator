@@ -3,7 +3,7 @@ function calculateTip() {
   var service = document.getElementById("service").value;
   var numPeople = document.getElementById("people").value;
   var finalTip = document.getElementById("finalTip");
-  var amountTip = document.getElementById("tip");
+  var textTip = document.getElementById("tip");
 
   var finalTotal = document.getElementById("finalTotal");
   var billTotal = document.getElementById("total");
@@ -17,11 +17,11 @@ function calculateTip() {
   var total = Number(billAmount) + totalTip;
 
   if (numPeople == "1") {
-    amountTip.innerHTML = totalTip.toFixed(2);
+    textTip.innerHTML = totalTip.toFixed(2);
   } else {
     totalTip = totalTip / numPeople;
     var total = Number(billAmount) + totalTip;
-    amountTip.innerHTML = totalTip.toFixed(2);
+    textTip.innerHTML = totalTip.toFixed(2);
     document.getElementById("each").display = "inline";
     document.getElementById("each2").display = "inline";
   }
