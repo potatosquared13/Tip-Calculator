@@ -1,0 +1,114 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Monserrat', sans-serif;
+}
+
+body {
+  /* background-color: rgb(59, 26, 23); */
+  background-image: linear-gradient(to right, rgb(59, 26, 23), rgb(92, 23, 22));
+  width: 100%;
+}
+
+.title {
+  background-color:rgb(27, 5, 15);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  background-color: white;
+  border-radius: 30px;
+  display: block;
+  height: 700px;
+  margin: 50px auto;
+  width: 450px;
+}
+
+.main {
+  margin: 10px;
+  padding: 20px;
+}
+
+.label {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.people {
+  text-align: center;
+  margin-left: 5px;
+}
+
+
+#amount {
+  font-size: 15px;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 250px;
+}
+
+#service {
+  font-size: 15px;
+  margin: 5px auto 10px 60px;
+  height: 40px;
+  width: 250px;
+}
+
+#people {
+  font-size: 15px;
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 250px;
+}
+
+#calculate {
+  align-items: center;
+  /* background-color: rgb(92, 23, 22); */
+  background-color: darkred;
+  border-radius: 15px;
+  color: white;
+  display: block;
+  font-size: 23px;
+  height: 50px;
+  margin: 20px auto 10px auto;
+  width: 200px;
+}
+
+#calculate:hover {
+  background-color: rgb(92, 23, 22);
+  cursor: pointer;
+}
+
+#finalTip, #finalTotal {
+  font-size: 30px;
+  text-align: center;
+}
+
+#finalTip::before {
+  content: "Tip Amount";
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#finalTotal::before {
+  content: "Total Payment";
+  display: block;
+  font-weight: bold;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+#tip, #total {
+  font-weight: 800;
+}
